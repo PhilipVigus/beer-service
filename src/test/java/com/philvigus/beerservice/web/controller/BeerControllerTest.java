@@ -1,4 +1,4 @@
-package com.philvigus.beerservice.web.controllers;
+package com.philvigus.beerservice.web.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.philvigus.beerservice.web.model.BeerDto;

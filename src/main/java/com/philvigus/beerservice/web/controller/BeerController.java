@@ -1,4 +1,4 @@
-package com.philvigus.beerservice.web.controllers;
+package com.philvigus.beerservice.web.controller;
 
 import com.philvigus.beerservice.web.model.BeerDto;
 import org.springframework.http.HttpStatus;
