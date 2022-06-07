@@ -1,5 +1,6 @@
 package com.philvigus.beerservice.web.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -28,11 +29,18 @@ public class BeerDto {
 
   @Positive @NotNull private Long upc;
 
-  @Positive @NotNull private BigDecimal price;
+  @JsonFormat(shape = JsonFormat.Shape.STRING)
+  @Positive
+  @NotNull
+  private BigDecimal price;
 
   private Integer quantity;
 
-  @Null private OffsetDateTime createdAt;
+  @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+  @Null
+  private OffsetDateTime createdAt;
 
-  @Null private OffsetDateTime updatedAt;
+  @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ssZ", shape = JsonFormat.Shape.STRING)
+  @Null
+  private OffsetDateTime updatedAt;
 }
