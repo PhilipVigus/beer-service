@@ -1,0 +1,13 @@
+= Brewery Order Service Docs
+Phil Vigus;
+:doctype: book
+:icons: font
+:source-highlighter: highlightjs
+
+Stuff
+
+include::{snippets}/orders/curl-request.adoc[]
+include::{snippets}/orders/http-request.adoc[]
+include::{snippets}/orders/http-response.adoc[]
+include::{snippets}/orders/response-body.adoc[]
+include::{snippets}/orders/response-fields.adoc[]
